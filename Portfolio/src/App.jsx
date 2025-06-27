@@ -5,7 +5,7 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 const App = () => {
   return (
     <BrowserRouter>
-      <Route path="/nav" element={<Navbar/>}/>
+      <Navbar/>
       <Routes>
       </Routes>
     </BrowserRouter>
