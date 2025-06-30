@@ -1,3 +1,150 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.funnel-sans-font {
+  font-family: "Funnel Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.arvo-regular {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* styles below */
+
 .navbar-container{
-    height: 56px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-bottom: 2px black solid;
+    
+}
+
+.logo{
+    /* padding:  0px 0 30px 30px; */
+    padding-left: 30px;
+    /* 
+    background-image: url("../assets/my-logo.png");
+    height: 100%;
+    background-position: center;
+    background-size: contain; */
+    /* background-repeat: no-repeat; */
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo>img{
+    height: 100%;
+    width: 100%;
+}
+
+.nav-links{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.nav-links>a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 3% 0 3%;
+}
+
+.menuButton{
+    padding-right: 30px;
+    display: none;
+}
+
+.nav-links>a:hover{
+    border-bottom: 2px red solid;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: inherit;
+}
+
+.menuButton{
+    cursor: pointer;
+}
+
+.dropdownMenu{
+    width: 100%;
+    background-color: rgb(117, 115, 115);
+    color: white;
+}
+
+.dropdownMenu>a{
+    padding: 10px 0 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdownMenu>a:hover{
+    background-color: rgb(212, 23, 23);
+}
+
+.active{
+    border-bottom: 2px red solid;
+}
+
+.inactive{
+    border-bottom: 0px;
+}
+
+/* .flex and .none for toggling the menu on and off */
+
+.dropdownMenu.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdownMenu.none{
+    display: none;
+}
+
+
+@media screen and (min-width: 661px) {
+    .menuButton{
+        display: none;
+    }
+
+    .nav-links{
+        display: flex;
+    }
+
+    #dropdown-menu{
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 660px) {
+    .menuButton{
+        display: block;
+        margin-left: auto;
+    }
+
+    .nav-links{
+        display: none;
+    }
 }
