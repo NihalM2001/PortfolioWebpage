@@ -68,7 +68,7 @@
 }
 
 .nav-links>a:hover{
-    border-bottom: 2px red solid;
+    border-bottom: 2px #ff0000 solid;
 }
 
 a{
@@ -106,6 +106,7 @@ a:visited{
 
 .inactive{
     border-bottom: 0px;
+    text-decoration: none;
 }
 
 /* .flex and .none for toggling the menu on and off */
